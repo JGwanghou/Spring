@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>user1 :: modify</title>
+		<title>user1 :: register</title>
 	</head>
 <body>
 	<h1>user1 수정</h1>

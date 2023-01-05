@@ -43,7 +43,7 @@ public class User1Controller {
 		User1VO user = service.selectUser1(uid);
 		model.addAttribute("user", user);
 		
-		return "/user1/list";
+		return "/user1/modify";
 	}
 	
 	@PostMapping("/user1/modify")
@@ -54,7 +54,7 @@ public class User1Controller {
 	}
 	
 	// 삭제
-	@GetMapping("/user1/modify")
+	@GetMapping("/user1/delete")
 	public String delete(String uid) {
 		
 		service.deleteUser1(uid);
