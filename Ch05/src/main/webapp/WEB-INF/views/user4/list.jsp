@@ -4,30 +4,32 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>user3 :: list</title>
+		<title>user4 :: list</title>
 	</head>
 <body>
-	<h1>user3 목록</h1>
+	<h1>user4 목록</h1>
 	<a href="/Ch05">Ch05 메인</a>
-	<a href="/Ch05/user3/register">user3 등록</a>
+	<a href="/Ch05/user4/register">user4 등록</a>
 	
 	<table border="1">
 		<tr>
-			<th>아이디</th>
+			<th>번호</th>
 			<th>이름</th>
-			<th>휴대폰</th>
+			<th>성별</th>
 			<th>나이</th>
+			<th>주소</th>
 			<th>관리</th>
 		</tr>
-		<c:forEach var="user" items="${usr}">
+		<c:forEach var="user" items="${user4}">
 			<tr>
-				<td>${user.uid}</td>
+				<td>${user.seq}</td>
 				<td>${user.name}</td>
-				<td>${user.hp}</td>
+				<td>${user.gender}</td>
 				<td>${user.age}</td>
+				<td>${user.addr}</td>
 				<td>
-					<a href="/Ch05/user3/modify?uid=${user.uid}">수정</a>
-					<a href="/Ch05/user3/delete?uid=${user.uid}">삭제</a>
+					<a href="/Ch05/user4/modify?seq=${user.seq}">수정</a>
+					<a href="/Ch05/user4/delete?seq=${user.seq}">삭제</a>
 				</td>
 			</tr>
 		</c:forEach>

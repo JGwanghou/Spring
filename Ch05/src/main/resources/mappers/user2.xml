@@ -4,7 +4,7 @@
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="user2">
 	<insert id="insertUser2">
-		INSERT INTO `user2` VALUES(#{uid}, #{name}, #{hp}, #{age});
+		INSERT INTO `user2` VALUES (#{uid}, #{name}, #{hp}, #{age});
 	</insert>
 	<select id="selectUser2" resultType="kr.co.ch05.vo.User2VO">
 		SELECT * FROM `user2` WHERE `uid`=#{uid};
@@ -13,9 +13,13 @@
 		SELECT * FROM `user2`;
 	</select>
 	<update id="updateUser2">
-	
+		update `user2` set
+			`name`=#{name},
+			`hp`=#{hp},
+			`age`=#{age}
+		WHERE `uid`=#{uid};
 	</update>
 	<delete id="deleteUser2">
-	
+		DELETE FROM `user2` WHERE `uid`=#{uid};
 	</delete>
 </mapper>

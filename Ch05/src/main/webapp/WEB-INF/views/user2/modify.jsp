@@ -14,19 +14,19 @@
 		<table border="1">
 			<tr>
 				<td>아이디</td>
-				<td><input type="text" name="uid" value="" readonly/></td>
+				<td><input type="text" name="uid" value="${user.uid}" readonly/></td>
 			</tr>
 			<tr>
 				<td>이름</td>
-				<td><input type="text" name="name" value=""/></td>
+				<td><input type="text" name="name" value="${user.name}"/></td>
 			</tr>
 			<tr>
 				<td>휴대폰</td>
-				<td><input type="text" name="hp" value="" /></td>
+				<td><input type="text" name="hp" value="${user.hp}" /></td>
 			</tr>
 			<tr>
 				<td>나이</td>
-				<td><input type="number" name="age" value="" /></td>
+				<td><input type="number" name="age" value="${user.age}" /></td>
 			</tr>
 			<tr>
 				<td colspan="2" align="right"><input type="submit" name="수정"/></td>
