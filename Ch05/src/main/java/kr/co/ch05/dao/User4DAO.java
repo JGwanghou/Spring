@@ -1,6 +1,5 @@
 package kr.co.ch05.dao;
 
-import java.lang.System.Logger;
 import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;

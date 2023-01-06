@@ -16,6 +16,7 @@
 	<a href="/Ch05/user4/list">user4 목록</a>
 	
 	<form action="/Ch05/user4/modify" method="post">
+		<input type="hidden" name="seq" value="${user.seq}"/>
 		<table border="1">
 			<tr>
 				<td>이름</td>
